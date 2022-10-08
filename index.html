@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8" content="width=device-width, initial-scale=1" />
     <title>Nathan Gilbert's Website Portfolio</title>
     <style>
       body {
@@ -65,6 +65,30 @@
         scroll-behavior: smooth;
         background-color: #b9b9b9;
       }
+
+      .collapsible {
+        background-color: #777;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+      }
+
+      .active,
+      .collapsible:hover {
+        background-color: #555;
+      }
+
+      .content {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: #f1f1f1;
+      }
     </style>
   </head>
 </html>
@@ -86,7 +110,7 @@
     <div Intro>
       <br />
       <br />
-      <h5 style="display: inline">Last updated 10/6/2022</h5>
+      <h5 style="display: inline">Last updated 10/8/2022</h5>
       <br />
       <div style="display: inline-block; vertical-align: top">
         <img
@@ -185,8 +209,6 @@
 
   <div Projects>
     <h2>Projects:</h2>
-    <h3>ServiceNow - Microsoft Teams Integration - In Progress</h3>
-
     <h3>
       <a href="https://github.com/natedrewg/Lacrosse-Database" target="_blank"
         >Division 3 Mac Lacrosse Database</a
@@ -194,89 +216,90 @@
     </h3>
 
     <h3>
-      <a href="https://github.com/natedrewg/Website-Portfolio">This Website</a>
+      <a href="https://github.com/natedrewg/Website-Portfolio"
+        >Website Portfolio on Github</a
+      >
     </h3>
 
-    <h3 id="Classes">Website for Professor - In Progress</h3>
+    <h3>ServiceNow - Microsoft Teams Integration - In Progress</h3>
+
+    <h3 id="Classes">Professor Huddell's Website - In Progress</h3>
 
     <h3>Discord Bot - In Progress</h3>
   </div>
 
-  <div Classes>
-    <h2>Classes:</h2>
-    <div C++>
-      <h4>C++ -</h4>
-      <p>
-        An introduction to computer programming using the C++ language. The
-        course will teach the concepts of problem solving and procedural design,
-        and will introduce object-oriented programming through the use of C++.
-        Students will learn to design, code, test, debug and document computer
-        programs.
-      </p>
-    </div>
+  <h2>Classes:</h2>
+  <p>Click a class to see the class descriptions.</p>
 
-    <div Software Engineering>
-      <h4>Software Engineering -</h4>
-      <p>
-        This course highlights various technological updates of recent years and
-        provides students with highly relevant and current information as it
-        pertains to the practice of software development. The topics addressed
-        within course include the areas of Software Engineering best practices,
-        dependability & security, advanced Software Engineering concepts, and
-        software management. The course strives to set students on the journey
-        to becoming the innovators of tomorrow and to create software that will
-        make our world a better, safer, and more advanced place to live. The
-        course is an introduction to Software Engineering covering development
-        life cycle models, requirements analysis and specification design
-        concepts and methods, testing, maintenance, CASE tools and management
-        concerns. Additional topics may include reuse metrics, experimentation,
-        reengineering, development environments, and standards.
-      </p>
-    </div>
+  <button type="button" class="collapsible">C++</button>
+  <div class="content">
+    <p>
+      An introduction to computer programming using the C++ language. The course
+      will teach the concepts of problem solving and procedural design, and will
+      introduce object-oriented programming through the use of C++. Students
+      will learn to design, code, test, debug and document computer programs.
+    </p>
+  </div>
+  <button type="button" class="collapsible">Software Engineering</button>
+  <div class="content">
+    <p>
+      This course highlights various technological updates of recent years and
+      provides students with highly relevant and current information as it
+      pertains to the practice of software development. The topics addressed
+      within course include the areas of Software Engineering best practices,
+      dependability & security, advanced Software Engineering concepts, and
+      software management. The course strives to set students on the journey to
+      becoming the innovators of tomorrow and to create software that will make
+      our world a better, safer, and more advanced place to live. The course is
+      an introduction to Software Engineering covering development life cycle
+      models, requirements analysis and specification design concepts and
+      methods, testing, maintenance, CASE tools and management concerns.
+      Additional topics may include reuse metrics, experimentation,
+      reengineering, development environments, and standards.
+    </p>
+  </div>
+  <button type="button" class="collapsible">Python</button>
+  <div class="content">
+    <p>
+      This course will teach students the introductory skills of programming,
+      problem solving and algorithmyic thinking in Python. Topics include
+      variables, input/output, conditional statements/logic, Boolean
+      expressions, flow control, loops and functions. We will use the Cloud
+      9(http://c9.io) integraded development environment (IDE).
+    </p>
+  </div>
 
-    <div Python>
-      <h4>Python -</h4>
-      <p>
-        This course will teach students the introductory skills of programming,
-        problem solving and algorithmyic thinking in Python. Topics include
-        variables, input/output, conditional statements/logic, Boolean
-        expressions, flow control, loops and functions. We will use the Cloud
-        9(http://c9.io) integraded development environment (IDE).
-      </p>
-    </div>
+  <button type="button" class="collapsible">Data Structures</button>
+  <div class="content">
+    <p>
+      This course is a continuation of CSCI 200 with a focus on objects,
+      classes, and data structures in C++. Students will learn the
+      implementation and use of C++ objects to represent mathematical objects,
+      as well as abstract data types in C++ programs.
+    </p>
+  </div>
 
-    <div Data Structures>
-      <h4>Data Structures -</h4>
-      <p>
-        This course is a continuation of CSCI 200 with a focus on objects,
-        classes, and data structures in C++. Students will learn the
-        implementation and use of C++ objects to represent mathematical objects,
-        as well as abstract data types in C++ programs.
-      </p>
-    </div>
+  <button type="button" class="collapsible">Networking</button>
+  <div class="content">
+    <p>
+      The theory and practice behind computer networking design and
+      implementation, particularly related to the internet. Topics include:
+      structure and components of computer networks; routing, addressing, packet
+      switching; network protocols; flow and error control; local area networks;
+      network security.
+    </p>
+  </div>
 
-    <div Networking>
-      <h4>Networking -</h4>
-      <p>
-        The theory and practice behind computer networking design and
-        implementation, particularly related to the internet. Topics include:
-        structure and components of computer networks; routing, addressing,
-        packet switching; network protocols; flow and error control; local area
-        networks; network security.
-      </p>
-    </div>
-
-    <div Stats for Data Analysis>
-      <h4>Stats for Data Analysis -</h4>
-      <p id="Work Experience">
-        Introduction to statistics with an emphasis on theory and application.
-        Includes probability; sampling; t-test, analysis of variance; chi
-        square; correlation; regression; effect size. Intended as an
-        introduction for students meeting additional statistics, data science,
-        or data analysis coursework. This course does not count toward the major
-        or minor in mathematics.
-      </p>
-    </div>
+  <button type="button" class="collapsible">Stats for Data Analysis</button>
+  <div class="content">
+    <p id="Work Experience">
+      Introduction to statistics with an emphasis on theory and application.
+      Includes probability; sampling; t-test, analysis of variance; chi square;
+      correlation; regression; effect size. Intended as an introduction for
+      students meeting additional statistics, data science, or data analysis
+      coursework. This course does not count toward the major or minor in
+      mathematics.
+    </p>
   </div>
 
   <div Work Experience>
@@ -415,4 +438,21 @@
       </div>
     </div>
   </div>
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  </script>
 </body>
