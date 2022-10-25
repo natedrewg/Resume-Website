@@ -26,10 +26,10 @@ Interests,
 Pictures
 
 Upgrades to be made:
+Add link to Resume
 Relevant Experience - Add a space for how well I know each subject... most likely with a meter of some kind.
 Navigation Bar - Make it auto sized to fit perfectly on the page. 
 Projects - Add write ups.
 Projects - Add connection to Database on webpage.
 Customize Appearance - Add light Mode and Dark Mode button on the top lefthand side.
 Customize Appearance - Add different Languages mode.
-Customize Appearance - 
