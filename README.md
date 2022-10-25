@@ -9,20 +9,20 @@ JavaScript to provide dropdown descriptions for the classes section.
 Links to every profile of my professional life.
 
 Contains:
-Navigation Bar
-Majors
-Phone Number
-Email
-Linked in Profile
-Github Profile
-Honors
-Relevant Experience
-Projects
-Classes
-Work Experience
-References
-Activities
-Interests
+Navigation Bar,
+Majors,
+Phone Number,
+Email,
+Linked in Profile,
+Github Profile,
+Honors,
+Relevant Experience,
+Projects,
+Classes,
+Work Experience,
+References,
+Activities,
+Interests,
 Pictures
 
 Upgrades to be made:
