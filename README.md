@@ -4,11 +4,6 @@ This Website Portfolio was created with HTML, CSS, and JavaScript.
 Started in September, the first edition was finished on November 24th. 
 
 Features such as:
-A navigation bar with href links to other ID's within the page. 
-JavaScript to provide dropdown descriptions for the classes section. 
-Started in September, the first edition was finished on November 24th.
-
-Features such as:
 A navigation bar with href links to other ID's within the page.
 JavaScript to provide dropdown descriptions for the classes section.
 Links to every profile of my professional life.
