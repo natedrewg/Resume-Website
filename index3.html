@@ -1,28 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1" />
-    <title>Nathan's Website Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-    />
+    <meta charset="UTF-8" content="width=device-width, initial-scale=1" />
+    <title>Nathan Gilbert's Website Portfolio</title>
     <style>
       body {
         margin-left: 12%;
         margin-right: 12%;
-        background-color: #d0d0d0;
-        padding: 12px 20px;
-        font-size:calc(6.5px + .77vw);
+        background-color: #ffffff;
+        padding: 12px 14px;
       }
 
       img {
-        border: 8px groove #222;
-        border-radius: 5px;
+        border: 8px solid #222;
       }
 
-      
+      /* The navigation bar */
+      .navbar {
+        overflow: hidden;
+        background-color: #333;
+        position: fixed; /* Set the navbar to fixed position */
+        top: 0; /* Position the navbar at the top of the page */
+        width: 76%; /* Full width */
+        left: 12%;
+      }
+
+      /* Links inside the navbar */
+      .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      /* Change background on mouse-over */
+      .navbar a:hover {
+        background: #ddd;
+        color: black;
+      }
+
       .main {
+        margin-top: 30px; /* Add a top margin to avoid content overlay */
         margin-left: 30px;
         margin-right: 30px;
       }
@@ -32,17 +52,18 @@
         border-top: 5px solid rgb(0, 0, 0);
       }
 
-      p {
-        text-align: center;
+      .row {
+        display: flex;
+      }
+
+      .column {
+        flex: 33.33%;
+        padding: 5px;
       }
 
       html {
         scroll-behavior: smooth;
-        background-color: #959595;
-      }
-
-      a {
-        color:#083b7a;
+        background-color: #b9b9b9;
       }
 
       .collapsible {
@@ -68,73 +89,62 @@
         overflow: hidden;
         background-color: #f1f1f1;
       }
-      nav {
-        margin-left: 12%;
-        margin-right: 12%;
-      }
-
     </style>
   </head>
 </html>
 
 <body>
   <header>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <ul class="nav navbar-nav">
-          <li><a href="#top">Nathan's Website Portfolio</a></li>
-          <li><a href="#Honors" class="visible-lg">Honors</a></li>
-          <li><a href="#Skills" class="visible-lg">Skills</a></li>
-          <li><a href="#Projects" class="visible-lg">Projects</a></li>
-          <li><a href="#Classes" class="visible-lg">Classes</a></li>
-          <li><a href="#Work Experience" class="visible-lg">Work Experience</a></li>
-          <li><a href="#Activities" class="visible-lg">Activities</a></li>
-          <li><a href="#Pictures" class="visible-lg">Pictures</a></li>
-        </ul>
-      </div>
-    </nav>
+    <div class="navbar">
+      <a href="#top">Nathan Gilbert's Website</a>
+      <a href="#Honors">Honors</a>
+      <a href="#Relevant Experience">Relevant Experience</a>
+      <a href="#Projects">Projects</a>
+      <a href="#Classes">Classes</a>
+      <a href="#Work Experience">Work Experience</a>
+      <a href="#Activities">Activities & Interests</a>
+      <a href="#Pictures">Pictures</a>
+    </div>
 
     <div Intro>
       <br />
+      <br />
+      <h5 style="display: inline">Last updated 1/26/2022</h5>
+
       <br />
       <div style="display: inline-block; vertical-align: top">
         <img
           src="image0 (3).jpeg"
           alt="Picture of Nathan"
-          width="250"
-          height="250"
+          width="200"
+          height="200"
         />
       </div>
 
       <div style="display: inline-block">
-        <h1>Nathan Billic-Gilbert </h1>
-        <h3>Computer Science & Data Science Double Major at Eastern University </h3>
-        <h3>Email: natedrewg@gmail.com </h3>
+        <h3>Computer / Data Science Double Major at Eastern University</h3>
+        <h3>Phone Number: (484) 885-8196</h3>
+        <h3>Email: natedrewg@gmail.com</h3>
         <h3>
           Linked-In Profile:
           <a
             href="https://www.linkedin.com/in/nathan-gilbert-166392228"
             target="_blank"
-            >Linked-In</a
+            >Nathan Gilbert's Linked-In</a
           >
-          
         </h3>
         <h3 id="Honors">
           Github Profile:
           <a href="https://github.com/natedrewg" target="_blank"
-            >Github Repos</a
+            >Nathan Gilbert's Github Repos</a
           >
-          
         </h3>
       </div>
-    </div>
-    <div style="display: inline-block; font-size:small;">
-      Last Updated: 7/17/2023
     </div>
   </header>
 
   <div class ="row">
-    <div class="col-sm-6">
+    <div class="column">
       <h2>About Me:</h2>
       <p>
         I am currently a student at Eastern University pursuing two majors in computer science and data science. I plan on attending 
@@ -143,13 +153,10 @@
         by automation with python scripts, full stack development, and website development.
       </p>
     </div>
-    <div class="col-sm-6">
+    <div class="column">
     <div Honors>
-    <h2>Leadership & Honors:</h2>
+    <h2>Honors:</h2>
     <ul>
-      <li><strong>Captain of <a href="https://goeasterneagles.com/sports/mens-lacrosse/roster/nathan-gilbert/9343" target="_blank">
-      Eastern University Men's Lacrosse Team 
-      </a></strong></li>
       <li>        
         <strong
           >Top 100 Intern According to 2022,
@@ -165,7 +172,10 @@
         <strong>Deans List at Eastern University</strong>
       </li>
       <li>
-        <strong id="Relevant Experience">Sigma Zeta - Honors society of Computer Science member</strong>
+        <strong>Sigma Zeta - Honors society of Computer Science member</strong>
+      </li>
+      <li>
+        <strong id="Relevant Experience" >2 Linked-In Skill Assesment Badges: Agile Methodologies & HTML</strong>
       </li>
     </ul>
   </div>
@@ -173,12 +183,12 @@
   </div>
 
 
-  <div Skills>
-    <h2>Skills:</h2>
+  <div Relevant Experience>
+    <h2>Relevant Experience:</h2>
 
 
     <div class="row">
-      <div class="col-sm-4">
+      <div class="column">
         <h3>Experience with Programming Languages:</h3>
         <ul>
           <li>Python</li>
@@ -188,7 +198,7 @@
           <li>R</li>
         </ul>
       </div>
-      <div class = "col-sm-4" text-align: >
+      <div class = "column" text-align: >
         <h3>Experience with Markup Languages:</h3>
         <ul>
           <li>R Markdown</li>
@@ -196,7 +206,7 @@
           <li>CSS</li>
         </ul>
       </div>
-      <div class ="col-sm-4">
+      <div class ="column">
         <h3>Other Experience:</h3>
         <ul>
           <li>Unix Environments</li>
@@ -341,9 +351,9 @@
     <h2>Work Experience:</h2>
 
     <div class ="row">
-      <div class ="col-sm-4">
+      <div class ="column">
         <div ServiceNow Development Intern>
-          <h3 style="display: inline"><strong>ServiceNow Development Intern</strong></h3>
+          <h4 style="display: inline">ServiceNow Development Intern</h4>
           <br />
           <p style="display: inline">
           <strong>Employer:</strong> Thermo Fisher Scientific <br />
@@ -359,9 +369,9 @@
         </ul>
         </div>
       </div>
-      <div class ="col-sm-4">
+      <div class ="column">
         <div Carpet Installler Assistant>
-        <h3 style="display: inline"><strong>Carpet Installer Assistant</strong></h3>
+        <h4 style="display: inline">Carpet Installer Assistant</h4>
         <br />
         <p style="display: inline">
           <strong>Employer:</strong> G&F Carpet <br />
@@ -375,9 +385,9 @@
         </ul>
       </div>
       </div>
-        <div class ="col-sm-4">
+        <div class ="column">
           <div Shift Leader>
-          <h3 style="display: inline"><b>Shift Leader</b></h3>
+          <h4 style="display: inline">Shift Leader</h4>
           <br />
           <p style="display: inline">
             <strong>Employer:</strong> Jake's Wayback Burgers <br />
@@ -400,36 +410,26 @@
   <div Activities>
 
     <div class="row">
-      <div class="col-sm-6">
+      <div class="column">
         <h2>Activities:</h2>
-        <h3><strong>Captain of Eastern Men's Lacrosse</strong></h3>
-        <ul>
-          <li>Sophomore year broke the caused turnovers record for a single game, and
-          achieved player of the week.</li>
-          <li>Got surgery junior year fall. Came back 2 games in and led the team in caused turnovers. Achieved Second Team All Mac honors.</li> 
-          <li>Got surgery Senior year fall. Season in progress.</li>
-        </ul>
-        <h3><strong>Teaching Assistant for Computer Science Department</strong></h3>
-        <ul>
-          <li>Automated grading through the medium of codegrade.</li>
-          <li>Students could get feedback instantly in order to help with learning.</li>
-        </ul>
-        <h3><strong>Volunteer Coach</strong></h3>
-        <ul>
-          <li>Automated grading through the medium of codegrade.</li>
-          <li>Students could get feedback instantly in order to help with learning.</li>
-        </ul>
+        <h3>Member of Eastern Men's Lacrosse</h3>
+        <p>
+          - Sophomore year broke the caused turnovers record for a single game, and
+          achieved player of the week. <br />
+          -Got surgery junior year fall. Hopefully returning by junior year spring.
+        </p>
+        <h3>Teaching Assistant for C++ Class</h3>
+        <p>
+          - Automated grading through the medium of codegrade. <br />
+          - Students could get feedback instantly in order to help with learning.
+        </p>
       </div>
-      <div class="col-sm-6">
+      <div class="column">
         <h2>Interests:</h2>
-        <ul>
-          <li><strong>Golf:</strong> Started summer of 2023, not very good.</li>
-          <li><strong>Frisbee Golf:</strong> Started winter of 2021, I love the hammer throw.</li>
-          <li><strong>Computers:</strong> I love to build computers. I have built a couple of my friends and have revamped my own twice since middle school.</li>
-          <li><strong>Working Out:</strong> I've always loved working out since sophomore year of high school. The benefits throughout my life are to substantial not to! </li>
-          <li><strong>Video Games:</strong> I have played all sorts of games ranging from Mario Kart, to Elden Ring. I love all sorts of games, as long as they're multiplayer.</li>
-          <li id="Pictures"><strong>Cooking:</strong> Cooking for my family and friends brings me great joy.</li>
-        </ul>
+        <h3>Cooking</h3>
+        <h3>Computers</h3>
+        <h3>Frisbee Golf</h3>
+        <h3 id="Pictures">Video Games</h3>
       </div>
     </div>
 
@@ -437,7 +437,7 @@
   <div>
     <h2>Pictures:</h2>
     <div class="row">
-      <div class="col-sm-6">
+      <div class="column">
         <img
           src="Internship.jpg"
           alt="Picture of coworker and boss at
@@ -447,11 +447,11 @@
           width="95%"
         />
         <p style="text-align: center">
-          Picture of coworker and boss at internship with Thermofisher
+          Picture of coworker and boss at internship with Thermofisher!
         </p>
       </div>
 
-      <div class="col-sm-6">
+      <div class="column">
         <img
           src="Lacrosse.JPG"
           alt="Picture of Nathan playing lacrosse"
@@ -459,12 +459,12 @@
           height="85%"
           width="95%"
         />
-        <p style="text-align: center">Picture of me playing lacrosse</p>
+        <p style="text-align: center">Picture of me playing lacrosse!</p>
       </div>
     </div>
 
     <div class="row" >
-      <div class="col-sm-6">
+      <div class="column">
         <img
           src="Jaz.JPG"
           alt="Picture of my dog!"
@@ -472,9 +472,9 @@
           height="85%"
           width="95%"
         />
-        <p style="text-align: center">Picture of my dog</p>
+        <p style="text-align: center">Picture of my dog!</p>
       </div>
-      <div class="col-sm-6">
+      <div class="column">
         <img
           src="Parents.JPG"
           alt="Picture of my parents and I!"
@@ -482,7 +482,7 @@
           height="85%"
           width="95%"
         />
-        <p style="text-align: center">Picture of my family</p>
+        <p style="text-align: center">Picture of my family!</p>
       </div>
     </div>
   </div>
