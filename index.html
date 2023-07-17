@@ -38,6 +38,7 @@
 
       html {
         scroll-behavior: smooth;
+        scroll-padding-top: 60px;
         background-color: #959595;
       }
 
@@ -73,6 +74,20 @@
         margin-right: 12%;
       }
 
+      h1 {
+        font-size:1.8vw;
+        font-weight:bold;
+      }
+      h2 {
+        font-size:1.8vw;
+        font-weight:bold;
+      }
+      h3 {
+        font-size:1.45vw;
+      }
+      h4 {
+        font-size:1.5vw;
+      }
     </style>
   </head>
 </html>
@@ -86,9 +101,9 @@
           <li><a href="#Honors" class="visible-lg">Honors</a></li>
           <li><a href="#Skills" class="visible-lg">Skills</a></li>
           <li><a href="#Projects" class="visible-lg">Projects</a></li>
-          <li><a href="#Classes" class="visible-lg">Classes</a></li>
           <li><a href="#Work Experience" class="visible-lg">Work Experience</a></li>
           <li><a href="#Activities" class="visible-lg">Activities</a></li>
+          <li><a href="#Classes" class="visible-lg">Classes</a></li>
           <li><a href="#Pictures" class="visible-lg">Pictures</a></li>
         </ul>
       </div>
@@ -98,6 +113,10 @@
       <br />
       <br />
       <div style="display: inline-block; vertical-align: top">
+        <div class="hidden-lg">
+          <br/>
+          <br/>
+        </div>
         <img
           src="image0 (3).jpeg"
           alt="Picture of Nathan"
@@ -119,7 +138,7 @@
           >
           
         </h3>
-        <h3 id="Honors">
+        <h3>
           Github Profile:
           <a href="https://github.com/natedrewg" target="_blank"
             >Github Repos</a
@@ -137,14 +156,16 @@
     <div class="col-sm-6">
       <h2>About Me:</h2>
       <p>
-        I am currently a student at Eastern University pursuing two majors in computer science and data science. I plan on attending 
-        Villanova University to obtain my masters in software engineering in the year 2024. I've always found computers to be severly 
-        interesting. From playing games to creating this website, they have always been a large part of my life. Right now, I am intrigued 
-        by automation with python scripts, full stack development, and website development.
+        I am currently a student at Eastern University pursuing two majors in computer science and data science. 
+        I also play lacrosse at Eastern. Playing lacrosse has taught me many valuable lessons about problem solving on the fly, 
+        leading a team, and putting hard work in to achieve my goals. After getting my undergraduate degrees, 
+        I plan on attending Eastern Universities masters 
+        in data science in order to further my education. Right now, I am intrigued 
+        by learning about leadership techniques ,website development, as well as Database creation and integration.
       </p>
     </div>
     <div class="col-sm-6">
-    <div Honors>
+    <div Honors id="Honors">
     <h2>Leadership & Honors:</h2>
     <ul>
       <li><strong>Captain of <a href="https://goeasterneagles.com/sports/mens-lacrosse/roster/nathan-gilbert/9343" target="_blank">
@@ -165,7 +186,7 @@
         <strong>Deans List at Eastern University</strong>
       </li>
       <li>
-        <strong id="Relevant Experience">Sigma Zeta - Honors society of Computer Science member</strong>
+        <strong>Sigma Zeta - Honors society of Computer Science member</strong>
       </li>
     </ul>
   </div>
@@ -173,38 +194,37 @@
   </div>
 
 
-  <div Skills>
+  <div Skills id="Skills">
     <h2>Skills:</h2>
 
 
     <div class="row">
       <div class="col-sm-4">
-        <h3>Experience with Programming Languages:</h3>
+        <h3>Web Development:</h3>
         <ul>
-          <li>Python</li>
-          <li>C++</li>
-          <li>SQL</li>
-          <li>JavaScript</li>
-          <li>R</li>
+          <li>HTML & CSS</li>
+          <li>Javascript</li>
+          <li>PHP & PHPMyAdmin</li>
+          <li>Xampp</li>
+          <li>AWS - Amplify</li>
         </ul>
       </div>
       <div class = "col-sm-4" text-align: >
-        <h3>Experience with Markup Languages:</h3>
+        <h3>ServiceNow Development:</h3>
         <ul>
-          <li>R Markdown</li>
-          <li>HTML</li>
-          <li>CSS</li>
+          <li>Javascript</li>
+          <li>Agile Methodologies</li>
+          <li>JSON</li>
+          <li>REST API</li>
+          <li>Graph API</li>
         </ul>
       </div>
       <div class ="col-sm-4">
         <h3>Other Experience:</h3>
         <ul>
-          <li>Unix Environments</li>
-          <li>Linux Environments</li>
-          <li>Graph API</li>
-          <li id="Projects">ServiceNow Development</li>
-          <li>JSON</li>
-          <li>PHP</li>
+          <li>Unix & Linux Environments</li>
+          <li>Scripting w/ Python</li>
+          <li>Object Oriented Programming w/ C++</li>
         </ul>
       </div>
     </div>
@@ -215,8 +235,11 @@
 
   </div>
 
-  <div Projects>
+  <div Projects id="Projects">
     <h2>Projects:</h2>
+    
+    <h3>ServiceNow to Microsoft Teams Integration</h3>
+
     <h3>
       <a href="https://github.com/natedrewg/Lacrosse-Database" target="_blank"
         >Division 3 Mac Lacrosse Database on Github</a
@@ -229,12 +252,120 @@
       >
     </h3>
 
-    <h3 id="Classes">ServiceNow to Microsoft Teams Integration</h3>
-
-    <h3>Automation Through Python - In Progress</h3>
+    <h3><a href="https://github.com/natedrewg/Scripts" target="_blank">Automation Through Python on Github</a></h3>
   </div>
 
-  <h2>Classes:</h2>
+
+
+  <div Work Experience id="Work Experience">
+    <h2>Work Experience:</h2>
+
+    <div class ="row">
+      <div class ="col-sm-6">
+        <div ServiceNow Development Intern>
+          <h3 style="display: inline">ServiceNow Development Intern</h3>
+          <br />
+          <p style="display: inline">
+          <strong>Employer:</strong> Thermo Fisher Scientific <br />
+          <strong>Dates:</strong> May 2022-Nov 2022
+          </p>
+        <ul>
+         <li>Developed software that impacted 125,000 people</li>
+         <li>Interfaced with many different levels of leadership including a vice president, senior director, and many managers</li>
+          <li>
+            Collaborated with team through scrums twice a week
+          </li>
+          <li>Gained experience with Javascript, Graph API, HTML, JSON, and Agile Methodologies</li>
+          <li>Internship was extended through fall because of exemplary preformance</li>
+        </ul>
+        </div>
+      </div>
+      <div class ="col-sm-3">
+        <div Carpet Installler Assistant>
+        <h3 style="display: inline">Carpet Installer Assistant</h3>
+        <br />
+        <p style="display: inline">
+          <strong>Employer:</strong> G&F Carpet <br />
+          <strong>Dates:</strong> May 2021-July 2021
+        </p>
+        <ul>
+          <li>
+            Assisted lead installer with installing floor covering materials
+          </li>
+          <li>Kept a tight schedule to keep up with demands</li>
+          <li>Arrived promptly everyday in order to prepare before the day started</li>
+        </ul>
+      </div>
+      </div>
+        <div class ="col-sm-3">
+          <div Shift Leader>
+          <h3 style="display: inline">Shift Leader</h3>
+          <br />
+          <p style="display: inline">
+            <strong>Employer:</strong> Jake's Wayback Burgers <br />
+            <strong>Dates:</strong> June 2019-Sept 2020
+          </p>
+          <ul>
+            <li>Responsible for opening and closing establishment 3 days a week</li>
+            <li>
+              Provided exemplary customer service in a fast paced environment
+            </li>
+            <li>
+              Led staff to complete specific tasks such as cleaning and cooking
+            </li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div Activities id="Activities">
+
+    <div class="row">
+      <div class="col-sm-6">
+        <h2>Activities:</h2>
+        <h3><strong>Captain of Eastern Men's Lacrosse</strong></h3>
+        <ul>
+          <li>Sophomore year broke the caused turnovers record for a single game, and
+          achieved player of the week.</li>
+          <li>Got surgery junior year fall. Came back 2 games in and led the team in caused turnovers. Achieved Second Team All Mac honors.</li> 
+          <li>Got surgery Senior year fall. Season in progress.</li>
+        </ul>
+         <h3><strong>President & Founder of Lambda</strong></h3>
+        <ul>
+          <li>Lambda is a computer science club focused on networking and panel type events. The club sets up speakers throughout 
+            semesters where a professional will explain what they do and then take questions from the group of students listening.
+          </li>
+          <li>30 Active Members from one year of being in existence.</li>
+          <li>Planning to take requests from Easterns community for projects that will improve students everyday life.</li>
+        </ul>
+          <h3><strong>Teaching Assistant for Computer Science Department</strong></h3>
+        <ul>
+          <li>Automated grading through the medium of codegrade.</li>
+          <li>Students could get feedback instantly in order to help with learning.</li>
+        </ul>
+        <h3><strong>Volunteer Lacrosse Coach</strong></h3>
+        <ul>
+          <li>Throughout summer I volunteer coach</li>
+        </ul>
+       
+        </ul>
+      </div>
+      <div class="col-sm-6">
+        <h2>Interests:</h2>
+        <ul>
+          <li><strong>Golf:</strong> Started summer of 2023, not very good.</li>
+          <li ><strong>Frisbee Golf:</strong> Started winter of 2021, I love the hammer throw.</li>
+          <li><strong>Computers:</strong> I love to build computers. I have built a couple of my friends and have revamped my own twice since middle school.</li>
+          <li><strong>Working Out:</strong> I've always loved working out since sophomore year of high school. The benefits throughout my life are to substantial not to! </li>
+          <li><strong>Video Games:</strong> I have played all sorts of games ranging from Mario Kart, to Elden Ring. As long as they're multiplayer, I'm happy.</li>
+          <li><strong>Cooking:</strong> Cooking for my family and friends brings me great joy.</li>
+        </ul>
+      </div>
+    </div>
+
+  <div Classes id="Classes">
+    <h2>Classes:</h2>
   <p>Click a class to see the class descriptions.</p>
 
   <button type="button" class="collapsible">C++</button>
@@ -296,7 +427,7 @@
     </p>
   </div>
 
-  <button type="button" class="collapsible" id="Work Experience">
+  <button type="button" class="collapsible" >
     Stats for Data Analysis
   </button>
   <div class="content">
@@ -310,7 +441,7 @@
     </p>
   </div>
 
-  <button type="button" class="collapsible" id="Work Experience">
+  <button type="button" class="collapsible" >
     Anaylysis of Algorithms
   </button>
   <div class="content">
@@ -319,7 +450,7 @@
     </p>
   </div>
 
-  <button type="button" class="collapsible" id="Work Experience">
+  <button type="button" class="collapsible" >
     Programming Languages
   </button>
   <div class="content">
@@ -328,7 +459,7 @@
     </p>
   </div>
 
-  <button type="button" class="collapsible" id="Work Experience">
+  <button type="button" class="collapsible">
     Operating Systems
   </button>
   <div class="content">
@@ -336,105 +467,9 @@
       A study of the techniques and algorithms of operating systems, and implementation of these algorithms. Topics include computer organization; processes, synchronization, scheduling; I/O; memory management; file systems.
     </p>
   </div>
-
-  <div Work Experience>
-    <h2>Work Experience:</h2>
-
-    <div class ="row">
-      <div class ="col-sm-4">
-        <div ServiceNow Development Intern>
-          <h3 style="display: inline"><strong>ServiceNow Development Intern</strong></h3>
-          <br />
-          <p style="display: inline">
-          <strong>Employer:</strong> Thermo Fisher Scientific <br />
-          <strong>Dates:</strong> May 2022-Nov 2022
-          </p>
-        <ul>
-         <li>Developed software on the ServiceNow platform</li>
-          <li>
-            Collaborated with mentor to integrate ServiceNow with Microsoft Teams
-          </li>
-          <li>Gained experience with Javascript, Graph API, HTML and JSON</li>
-          <li id="Activities">Internship was extended through fall to help with project</li>
-        </ul>
-        </div>
-      </div>
-      <div class ="col-sm-4">
-        <div Carpet Installler Assistant>
-        <h3 style="display: inline"><strong>Carpet Installer Assistant</strong></h3>
-        <br />
-        <p style="display: inline">
-          <strong>Employer:</strong> G&F Carpet <br />
-          <strong>Dates:</strong> May 2021-July 2021
-        </p>
-        <ul>
-          <li>
-            Assisted lead installer with installing floor covering materials
-          </li>
-          <li>Kept a tight schedule to keep up with demands</li>
-        </ul>
-      </div>
-      </div>
-        <div class ="col-sm-4">
-          <div Shift Leader>
-          <h3 style="display: inline"><b>Shift Leader</b></h3>
-          <br />
-          <p style="display: inline">
-            <strong>Employer:</strong> Jake's Wayback Burgers <br />
-            <strong>Dates:</strong> June 2019-Sept 2020
-          </p>
-          <ul>
-            <li>Responsible for opening and closing establishment 3 days a week</li>
-            <li>
-              Provided exemplary customer service in a fast paced environment
-            </li>
-            <li>
-              Led staff to complete specific tasks such as cleaning and cooking
-            </li>
-          </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  <div Activities>
-
-    <div class="row">
-      <div class="col-sm-6">
-        <h2>Activities:</h2>
-        <h3><strong>Captain of Eastern Men's Lacrosse</strong></h3>
-        <ul>
-          <li>Sophomore year broke the caused turnovers record for a single game, and
-          achieved player of the week.</li>
-          <li>Got surgery junior year fall. Came back 2 games in and led the team in caused turnovers. Achieved Second Team All Mac honors.</li> 
-          <li>Got surgery Senior year fall. Season in progress.</li>
-        </ul>
-        <h3><strong>Teaching Assistant for Computer Science Department</strong></h3>
-        <ul>
-          <li>Automated grading through the medium of codegrade.</li>
-          <li>Students could get feedback instantly in order to help with learning.</li>
-        </ul>
-        <h3><strong>Volunteer Coach</strong></h3>
-        <ul>
-          <li>Automated grading through the medium of codegrade.</li>
-          <li>Students could get feedback instantly in order to help with learning.</li>
-        </ul>
-      </div>
-      <div class="col-sm-6">
-        <h2>Interests:</h2>
-        <ul>
-          <li><strong>Golf:</strong> Started summer of 2023, not very good.</li>
-          <li><strong>Frisbee Golf:</strong> Started winter of 2021, I love the hammer throw.</li>
-          <li><strong>Computers:</strong> I love to build computers. I have built a couple of my friends and have revamped my own twice since middle school.</li>
-          <li><strong>Working Out:</strong> I've always loved working out since sophomore year of high school. The benefits throughout my life are to substantial not to! </li>
-          <li><strong>Video Games:</strong> I have played all sorts of games ranging from Mario Kart, to Elden Ring. I love all sorts of games, as long as they're multiplayer.</li>
-          <li id="Pictures"><strong>Cooking:</strong> Cooking for my family and friends brings me great joy.</li>
-        </ul>
-      </div>
-    </div>
-
-
-  <div>
+  </div>
+  
+  <div Pictures id="Pictures">
     <h2>Pictures:</h2>
     <div class="row">
       <div class="col-sm-6">
@@ -446,7 +481,7 @@
           height="85%"
           width="95%"
         />
-        <p style="text-align: center">
+        <p  style="text-align: center">
           Picture of coworker and boss at internship with Thermofisher
         </p>
       </div>
